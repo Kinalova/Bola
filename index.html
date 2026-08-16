@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Card Detail Pemain Bola</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div id="app">
+    <div id="inner">
+      <div id="grain"></div>
+
+      <!-- Teks Latar Belakang (Ghost Text) -->
+      <div id="ghost-text">GDPS</div>
+
+      <!-- Brand / Logo di Kiri Atas -->
+      <div id="brand">PREMIER LEAGUE GDPS</div>
+
+      <!-- BAGIAN ATAS: Detail & Nama Pemain (Dengan Animasi Muncul) -->
+      <div id="top-info">
+        <div class="player-meta">
+          <span id="playerPos" class="badge-pos">GELANDANG • RM</span>
+          <span id="playerOvr" class="badge-ovr">OVR 85</span>
+        </div>
+        <h1 id="product-title">N. IRANKUNDA</h1>
+        <div id="player-stats">
+          <div class="stat-item"><span>TB</span> <strong id="playerTb">178 cm</strong></div>
+          <div class="stat-item"><span>BB</span> <strong id="playerBb">70 kg</strong></div>
+          <div class="stat-item"><span>AGE</span> <strong id="playerAge">20</strong></div>
+        </div>
+      </div>
+
+      <!-- Carousel Gambar Pemain di Tengah/Bawah -->
+      <div id="carousel" style="position:absolute;inset:0;z-index:3;"></div>
+
+      <!-- Tombol Navigasi di Bawah -->
+      <div id="nav-buttons">
+        <button class="nav-btn" id="btn-prev" aria-label="Previous">
+          <svg viewBox="0 0 24 24">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <button class="nav-btn" id="btn-next" aria-label="Next">
+          <svg viewBox="0 0 24 24">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <a id="discover" href="#">
+        RINOVA 
+        <svg viewBox="0 0 24 24">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
